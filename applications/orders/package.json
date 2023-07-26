@@ -1,0 +1,28 @@
+{
+  "name": "orders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "orders.js",
+  "scripts": {
+    "prebuild": "rm -rf dist && tsc",
+    "build": "esbuild orders.ts --bundle --minify --sourcemap --platform=node --target=es2020 --outfile=dist/orders.js",
+    "postbuild": "cd dist && zip -r ../../build/orders.zip orders.js*",
+    "test": "node orders.test.js"
+  },
+  "dependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "aws-sdk": "^2.1421.0",
+    "axios": "^1.4.0",
+    "dotenv-flow": "^3.2.0",
+    "faker": "^6.6.6",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.119",
+    "@types/node": "^20.4.4",
+    "@types/uuid": "^9.0.2",
+    "dotenv": "^16.3.1",
+    "esbuild": "^0.18.16",
+    "typescript": "^5.1.6"
+  }
+}
