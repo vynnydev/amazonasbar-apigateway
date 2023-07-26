@@ -1,6 +1,6 @@
 # amazonas-bar
 
-## Application under development
+## Application under development!!
 
 Event driven app that mirrors order processing in a amazonas bar based on AWS resources managed via terraform
 
