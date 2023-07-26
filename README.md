@@ -16,6 +16,8 @@ Event driven app that mirrors order processing in a amazonas bar based on AWS re
 
 The apps are built using `esbuild` and packaged with `zip` as detailed [here](https://docs.aws.amazon.com/lambda/latest/dg/typescript-package.html)
 
+> If you do not have the executable zip, follow the instruction [in this guide](https://matteus.dev/zip-for-windows-como-instalar-o-comando-zip/).
+
 ```sh
 make build APP=orders
 make build APP=delivery
